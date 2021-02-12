@@ -6,6 +6,7 @@
 -   **Formats:** Kontakt
 -   **Approx Size:** 498mb
 -   **Info:** [ruskeys.net](http://www.ruskeys.net/eng/base/electr25.php)
+- [Web Audio Demo](https://www.modularsamples.com/Demos/demos/em25.html)
 
 # Loading
 
