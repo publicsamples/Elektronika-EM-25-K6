@@ -7,17 +7,13 @@
 -   **Approx Size:** 498mb
 -   **Info:** [ruskeys.net](http://www.ruskeys.net/eng/base/electr25.php)
 - [Web Audio Demo](https://www.modularsamples.com/Demos/demos/em25.html)
+- 
+## **Get help**
 
-# Loading
+[Report an issue](https://github.com/publicsamples/home/issues) - [Ask a question](https://github.com/publicsamples/home/discussions) - [Guides](https://github.com/publicsamples/home/wiki)
 
-****Kontakt****
-
-1.  Open Kontakt
-2. From the file menu select "Batch resave". Proceed with yes
-3. Open the folder with the .nki files
-4. Once the batch resave process has completed open a sample using the file browser
-
+## **Support this project**
 
 [
-![Sample library disks](https://github.com/publicsamples/Public-Samples/raw/master/images/drives2.jpg?raw=true)
-](https://gum.co/modularsamples-drives)
+![dx-15-kontakt](https://www.modularsamples.com/img/msdx.png)
+](https://www.modularsamples.com/dx-15-for-kontakt/)
