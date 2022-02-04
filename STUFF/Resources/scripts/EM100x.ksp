@@ -1,0 +1,842 @@
+on init
+load_performance_view ("EM-100x")
+
+declare const $CCmessage99 := 99
+declare const $CCmessage98 := 98
+declare const $CCmessage25 := 25
+declare const $CCmessage26 := 26
+declare const $CCmessage40 := 40
+declare const $CCmessage41 := 41
+declare const $CCmessage42 := 42
+declare const $CCmessage43 := 43
+declare const $CCmessage44 := 44
+declare const $CCmessage45 := 45
+declare const $CCmessage46 := 46
+declare const $CCmessage47 := 47
+declare const $CCmessage48 := 48
+declare const $CCmessage49 := 49
+declare const $CCmessage50 := 50
+declare const $CCmessage51 := 51
+declare const $CCmessage52 := 52
+declare const $CCmessage53 := 53
+declare const $CCmessage54 := 54
+declare const $CCmessage55 := 55
+declare const $CCmessage56 := 56
+declare const $CCmessage57 := 57
+declare const $CCmessage58 := 58
+declare const $CCmessage59 := 59
+declare const $CCmessage60 := 60
+declare const $CCmessage61 := 61
+declare const $CCmessage62 := 62
+declare const $CCmessage100 := 100
+declare const $CCmessage101 := 101
+declare const $CCmessage102 := 102
+declare const $CCmessage103 := 103
+declare $count 
+
+make_persistent ($wave1)
+make_persistent ($multisampleA_OSC_controls_semi1)
+make_persistent ($multisampleA_OSC_controls_fine1)
+make_persistent ($multisampleA_OSCmorph_controls2_lfo1)
+make_persistent ($multisampleA_OSCmorph_controls2_lfo2)
+make_persistent ($multisampleA_OSCmorph_controls2_env1)
+make_persistent ($multisampleA_OSCmorph_controls2_env2)
+make_persistent ($multisampleA_OSCmorph_controls2_track)
+
+
+make_persistent ($multisampleA_OSC_controls_amt1)
+make_persistent ($multisampleA_OSCmorph_controls1_lfo1)
+make_persistent ($multisampleA_OSCmorph_controls1_lfo2)
+make_persistent ($multisampleA_OSCmorph_controls1_env1)
+make_persistent ($multisampleA_OSCmorph_controls1_env2)
+make_persistent ($multisampleA_OSCmorph_controls1_track)
+
+
+		
+make_persistent ($FilterA_filter_type)
+make_persistent ($FilterA_filter_controls_CUTOFF)
+make_persistent ($FilterA_filter_controls_res)
+make_persistent ($FilterA_filter_controls1_controls_filterlfo1)
+make_persistent ($FilterA_filter_controls1_controls_filterlfo2)
+make_persistent ($FilterA_filter_controls1_controls_filterenv1)
+make_persistent ($FilterA_filter_controls1_controls_filterenv2)
+make_persistent ($FilterA_filter_controls1_controls_track)
+
+
+
+make_persistent ($VCAa_envelopeADSR_controls_attack)
+make_persistent ($VCAa_envelopeADSR_controls_hold)
+make_persistent ($VCAa_envelopeADSR_controls_decay)
+make_persistent ($VCAa_envelopeADSR_controls_sustain)
+make_persistent ($VCAa_envelopeADSR_controls_release)
+make_persistent ($VCAa_vca_controls1_controls_filterlfo1)
+make_persistent ($VCAa_vca_controls1_controls_filterlfo2)
+make_persistent ($VCAa_vca_controls1_controls_filterlfo3)
+make_persistent ($VCAa_vca_controls1_controls_filterlfo4)
+
+
+
+make_persistent ($ENVa_envelopeADSR_controls_attack)
+make_persistent ($ENVa_envelopeADSR_controls_decay)
+make_persistent ($ENVa_envelopeADSR_controls_hold)
+make_persistent ($ENVa_envelopeADSR_controls_sustain)
+make_persistent ($ENVa_envelopeADSR_controls_release)
+make_persistent ($ENVa_envelopeADSR_polyat)
+make_persistent ($ENVa_envelopeADSR_vel)
+make_persistent ($ENVa_envelopeADSR_curve)
+
+make_persistent ($ENVb_envelopeADSR_controls_attack)
+make_persistent ($ENVb_envelopeADSR_controls_hold)
+make_persistent ($ENVb_envelopeADSR_controls_decay)
+make_persistent ($ENVb_envelopeADSR_controls_sustain)
+make_persistent ($ENVb_envelopeADSR_controls_release)
+make_persistent ($ENVb_envelopeADSR_polyat)
+make_persistent ($ENVb_envelopeADSR_vel)
+make_persistent ($ENVb_envelopeADSR_curve)
+
+
+
+make_persistent ($LFOa_lfoa_controls_RATE)
+make_persistent ($LFOa_lfo_controls_shape)
+make_persistent ($LFOa_lfo_TRIG)
+make_persistent ($LFOa_lfo_buton_ENV1)
+make_persistent ($LFOa_lfo_buton_track)
+make_persistent ($LFOa_lfo_buton_polyat)
+make_persistent ($LFOa_lfo_buton_vel)
+make_persistent ($LFOa_lfo_lfounit)
+
+
+make_persistent ($LFOb_lfoa_controls_RATE)
+make_persistent ($LFOb_lfo_controls_shape)
+make_persistent ($LFOb_lfo_TRIG)
+make_persistent ($LFOb_lfo_buton_lfo1)
+make_persistent ($LFOa_lfo_buton_track)
+make_persistent ($LFOb_lfo_buton_polyat)
+make_persistent ($LFOb_lfo_buton_vel)
+make_persistent ($LFOb_lfo_lfounit)
+
+
+make_persistent ($Voice_voice1_controls_vel)
+make_persistent ($Voice_voice1_controls_poly)
+make_persistent ($Voice_voice1_controls_TIME)
+
+
+make_persistent ($Voice_voice2_controls_unison)
+make_persistent ($Voice_voice2_controls_det)
+make_persistent ($Voice_voice2_controls_sprd)
+
+make_persistent ($delay_MIX)
+make_persistent ($delay_Dry)
+make_persistent ($delay_TIME)
+make_persistent ($delay_FEEDBACK)
+make_persistent ($delay_LOWCUT)
+make_persistent ($delay_HICUT)
+make_persistent ($delay_LOWCUT)
+make_persistent ($delay_DEPTH)
+make_persistent ($delay_RATE)
+make_persistent ($delay_BBDTYPE )
+make_persistent ($delay_type)
+end on
+
+
+
+{multisample a}
+
+on ui_control ($multisampleA_OSC_controls_semi1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_TUNE , 500000 + ($multisampleA_OSC_controls_semi1 *13889 + $multisampleA_OSC_controls_fine1 *139), $count, -1,-1)  
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSC_controls_fine1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_TUNE , 500000 + ($multisampleA_OSC_controls_semi1 *13889 + $multisampleA_OSC_controls_fine1 *139), $count, -1,-1)  
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSC_controls_morph1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_EXP_FILTER_MORPH , $multisampleA_OSC_controls_morph1 , $count, 0,-1)  
+set_engine_par($ENGINE_PAR_SPEED , $multisampleA_OSC_controls_morph1 , $count, 0,-1)  
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls2_lfo1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls2_lfo1 , $count, 1, 0)
+
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls2_lfo2)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls2_lfo2 , $count, 2, 5)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls2_env1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls2_env1 , $count, 3, 4)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls2_env2)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls2_env2 , $count, 4, 3)
+inc ($count)
+end while
+end on
+
+
+on ui_control ($multisampleA_OSCmorph_controls_morphenv1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphenv1 , $count, 3, 0)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphenv1 , $count, 3, 5)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls_morphenv2)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphenv2 , $count, 4, 0)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphenv2 , $count, 4, 4)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls_morphlfo1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphlfo1 , $count, 1, 1)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphlfo1 , $count, 1, 7)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls_morphlfo2)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphlfo2 , $count, 2, 0)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphlfo2 , $count, 2, 6)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls_morphtrack)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphtrack , $count, 17, -1)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls_morphtrack , $count, 31, -1)
+
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSC_controls_amt1)
+$count := 0
+while ($count < 184 )
+set_engine_par($ENGINE_PAR_EXP_FILTER_AMOUNT , $multisampleA_OSC_controls_amt1 , $count, 0,-1)  
+set_engine_par($ENGINE_PAR_GRAIN_LENGTH , $multisampleA_OSC_controls_amt1 , $count, 0,-1)  
+inc ($count)
+end while
+end on
+
+
+
+on ui_control ($multisampleA_OSCmorph_controls1_lfo1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_lfo1 , $count, 1, 6)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_lfo1 , $count, 1, 8)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls1_lfo2)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_lfo2 , $count, 2, 4 )
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_lfo2 , $count, 2, 7 )
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls1_env1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_env1 , $count, 3, 3)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_env1 , $count, 3, 6)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls1_env2)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_env2 , $count, 4, 2)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_env2 , $count, 4, 5)
+inc ($count)
+end while
+end on
+
+on ui_control ($multisampleA_OSCmorph_controls1_track)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_track , $count, 28, -1)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_OSCmorph_controls1_track , $count, 32, -1)
+
+inc ($count)
+end while
+end on
+
+{filter a}
+on ui_control ($FilterA_filter_type)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_EFFECT_SUBTYPE , $FilterA_filter_type , $count, 5,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($FilterA_filter_controls_CUTOFF)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_CUTOFF , $FilterA_filter_controls_CUTOFF , $count, 5,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($FilterA_filter_controls_res)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_RESONANCE , $FilterA_filter_controls_res , $count, 5,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($FilterA_filter_controls1_controls_filterlfo1)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $FilterA_filter_controls1_controls_filterlfo1 , $count, 1, 2)
+inc ($count)
+end while
+end on
+
+on ui_control ($FilterA_filter_controls1_controls_filterlfo2)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $FilterA_filter_controls1_controls_filterlfo2 , $count, 2, 1)
+inc ($count)
+end while
+end on
+
+on ui_control ($FilterA_filter_controls1_controls_filterenv1)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $FilterA_filter_controls1_controls_filterenv1 , $count, 3, 1)
+inc ($count)
+end while
+end on
+
+on ui_control ($FilterA_filter_controls1_controls_filterenv2)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $FilterA_filter_controls1_controls_filterenv2 , $count, 4, 1)
+inc ($count)
+end while
+end on
+
+on ui_control ($FilterA_filter_controls1_controls_track)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $FilterA_filter_controls1_controls_track , $count, 18, -1)
+inc ($count)
+end while
+end on
+
+
+
+
+{amp1}
+
+on ui_control ($VCAa_envelopeADSR_controls_attack)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_ATTACK , $VCAa_envelopeADSR_controls_attack , $count, 0,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($VCAa_envelopeADSR_controls_hold)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_HOLD , $VCAa_envelopeADSR_controls_hold , $count, 0,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($VCAa_envelopeADSR_controls_decay)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_DECAY , $VCAa_envelopeADSR_controls_decay , $count, 0,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($VCAa_envelopeADSR_controls_sustain)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_SUSTAIN , $VCAa_envelopeADSR_controls_sustain , $count, 0,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($VCAa_envelopeADSR_controls_release)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_RELEASE , $VCAa_envelopeADSR_controls_release , $count, 0,-1)
+inc ($count)
+end while
+end on
+
+
+
+on ui_control ($VCAa_vca_controls1_controls_filterlfo1)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $VCAa_vca_controls1_controls_filterlfo1 , $count, 1, 3)
+inc ($count)
+end while
+end on
+
+on ui_control ($VCAa_vca_controls1_controls_filterlfo2)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $VCAa_vca_controls1_controls_filterlfo2 , $count, 2, 2)
+inc ($count)
+end while
+end on
+
+on ui_control ($VCAa_vca_controls1_controls_filterlfo3)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $VCAa_vca_controls1_controls_filterlfo3 , $count, 1, 4)
+inc ($count)
+end while
+end on
+
+on ui_control ($VCAa_vca_controls1_controls_filterlfo4)
+$count := 0
+while ($count < 184 )     
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $VCAa_vca_controls1_controls_filterlfo4 , $count, 2, 3)
+inc ($count)
+end while
+end on
+
+
+{env1}
+
+on ui_control ($ENVa_envelopeADSR_controls_attack)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_ATTACK , $ENVa_envelopeADSR_controls_attack , $count, 3,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVa_envelopeADSR_controls_hold)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_HOLD , $ENVa_envelopeADSR_controls_hold , $count, 3,-1)
+inc ($count)
+end while
+end on
+
+
+on ui_control ($ENVa_envelopeADSR_controls_decay)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_DECAY , $ENVa_envelopeADSR_controls_decay , $count, 3,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVa_envelopeADSR_controls_sustain)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_SUSTAIN , $ENVa_envelopeADSR_controls_sustain , $count, 3,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVa_envelopeADSR_controls_release)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_RELEASE , $ENVa_envelopeADSR_controls_release , $count, 3,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVa_envelopeADSR_polyat)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $ENVa_envelopeADSR_polyat , $count, 16, -1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVa_envelopeADSR_vel)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $ENVa_envelopeADSR_vel , $count, 25, -1)
+inc ($count)
+end while
+end on
+
+
+on ui_control ($ENVa_envelopeADSR_curve)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_ATK_CURVE , $ENVa_envelopeADSR_curve , $count, 3,-1)
+inc ($count)
+end while
+end on
+
+
+
+
+{env2}
+
+on ui_control ($ENVb_envelopeADSR_controls_attack)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_ATTACK , $ENVb_envelopeADSR_controls_attack , $count, 4,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVb_envelopeADSR_controls_hold)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_HOLD , $ENVb_envelopeADSR_controls_hold , $count, 4,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVb_envelopeADSR_controls_decay)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_DECAY , $ENVb_envelopeADSR_controls_decay , $count, 4,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVb_envelopeADSR_controls_sustain)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_SUSTAIN , $ENVb_envelopeADSR_controls_sustain , $count, 4,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVb_envelopeADSR_controls_release)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_RELEASE , $ENVb_envelopeADSR_controls_release , $count, 4,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVB_envelopeADSR_curve)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_ATK_CURVE , $ENVB_envelopeADSR_curve , $count, 3,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVb_envelopeADSR_polyat)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $ENVb_envelopeADSR_polyat , $count, 26, -1)
+inc ($count)
+end while
+end on
+
+on ui_control ($ENVB_envelopeADSR_vel)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $ENVB_envelopeADSR_vel , $count, 27, -1)
+inc ($count)
+end while
+end on
+
+
+
+{LFO1}
+
+on ui_control ($LFOa_lfoa_controls_RATE)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_FREQUENCY , $LFOa_lfoa_controls_RATE , $count, 1,-1)
+inc ($count)
+end while
+end on
+
+
+
+on ui_control ($LFOa_lfo_controls_shape)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_SUBTYPE , $LFOa_lfo_controls_shape , $count, 1,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOa_lfo_TRIG)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_RETRIGGER , $LFOa_lfo_TRIG , $count, 1,-1)
+inc ($count)
+end while
+end on
+
+
+
+
+on ui_control ($LFOa_lfo_buton_ENV1)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $LFOa_lfo_buton_ENV1 , $count, 3, 2)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOa_lfo_lfounit)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_FREQUENCY_UNIT , $LFOa_lfo_lfounit , $count, 1, -1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOa_lfo_buton_track)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $LFOa_lfo_buton_track , $count, 19, -1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOa_lfo_buton_polyat)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $LFOa_lfo_buton_polyat , $count, 20, -1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOa_lfo_buton_vel)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $LFOa_lfo_buton_vel , $count, 21, -1)
+inc ($count)
+end while
+end on
+
+{LFO2}
+
+on ui_control ($LFOb_lfoa_controls_RATE)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_FREQUENCY , $LFOb_lfoa_controls_RATE , $count, 2,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOb_lfo_lfounit)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_FREQUENCY_UNIT , $LFOb_lfo_lfounit , $count, 2,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOb_lfo_controls_shape)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_SUBTYPE , $LFOb_lfo_controls_shape , $count, 2,-1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOb_lfo_TRIG)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_RETRIGGER , $LFOb_lfo_TRIG , $count, 2, -1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOb_lfo_buton_track)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $LFOb_lfo_buton_track , $count, 22, -1)
+inc ($count)
+end while
+end on
+
+
+on ui_control ($LFOb_lfo_buton_LFO1)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $LFOb_lfo_buton_LFO1 , $count, 1, 3)
+inc ($count)
+end while 
+end on
+
+on ui_control ($LFOb_lfo_buton_polyat)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $LFOb_lfo_buton_polyat , $count, 23, -1)
+inc ($count)
+end while
+end on
+
+on ui_control ($LFOb_lfo_buton_vel)
+$count := 0
+while ($count < 184 )    
+set_engine_par($ENGINE_PAR_MOD_TARGET_INTENSITY , $LFOb_lfo_buton_vel , $count, 24, -1)
+inc ($count)
+end while
+end on
+
+{voice}
+
+
+
+on ui_control ($Voice_voice1_controls_vel)
+   if ($CCmessage40 # -1)
+set_controller ($CCmessage40, $Voice_voice1_controls_vel)
+   end if
+   end on
+
+on ui_control ($Voice_voice1_controls_poly)
+   if ($CCmessage41 # -1)
+set_controller ($CCmessage41, $Voice_voice1_controls_poly)
+   end if
+   end on
+
+
+
+on ui_control ($Voice_voice1_controls_TIME)
+   if ($CCmessage43 # -1)
+set_controller ($CCmessage43, $Voice_voice1_controls_TIME)
+   end if
+   end on
+
+on ui_control ($Voice_voice2_controls_unison)
+   if ($CCmessage44 # -1)
+set_controller ($CCmessage44, $Voice_voice2_controls_unison)
+   end if
+   end on
+
+on ui_control ($Voice_voice2_controls_det)
+   if ($CCmessage45 # -1)
+set_controller ($CCmessage45, $Voice_voice2_controls_det)
+   end if
+   end on
+
+on ui_control ($Voice_voice2_controls_sprd)
+   if ($CCmessage46 # -1)
+set_controller ($CCmessage46, $Voice_voice2_controls_sprd)
+   end if
+   end on
+
+{Delay}
+
+on ui_control($delay_type)
+select ($delay_type)
+    case 0
+    set_engine_par($ENGINE_PAR_RDL_TYPE, $NI_REPLIKA_TYPE_MODERN,-1,0,1)
+    case 1
+    set_engine_par($ENGINE_PAR_RDL_TYPE, $NI_REPLIKA_TYPE_ANALOGUE,-1,0,1)
+    case 2
+    set_engine_par($ENGINE_PAR_RDL_TYPE, $NI_REPLIKA_TYPE_TAPE,-1,0,1)
+    case 3
+    set_engine_par($ENGINE_PAR_RDL_TYPE, $NI_REPLIKA_TYPE_VINTAGE,-1,0,1)
+    case 4
+    set_engine_par($ENGINE_PAR_RDL_TYPE, $NI_REPLIKA_TYPE_DIFFUSION,-1,0,1)
+end select
+end on
+
+
+on ui_control ($delay_MIX)
+   if ($CCmessage54 # -1)
+set_controller ($CCmessage54, $delay_MIX)
+   end if
+   end on
+
+on ui_control ($delay_Dry)
+   if ($CCmessage98 # -1)
+set_controller ($CCmessage98, $delay_Dry)
+   end if
+   end on
+
+on ui_control ($delay_TIME)
+   if ($CCmessage55 # -1)
+set_controller ($CCmessage55, $delay_TIME)
+   end if
+   end on
+
+on ui_control ($delay_FEEDBACK)
+   if ($CCmessage56 # -1)
+set_controller ($CCmessage56, $delay_FEEDBACK)
+   end if
+   end on
+
+on ui_control ($delay_LOWCUT)
+   if ($CCmessage57 # -1)
+set_controller ($CCmessage57, $delay_LOWCUT)
+   end if
+   end on
+
+on ui_control ($delay_HICUT)
+   if ($CCmessage58 # -1)
+set_controller ($CCmessage58, $delay_HICUT)
+   end if
+   end on
+
+on ui_control ($delay_DEPTH)
+   if ($CCmessage59 # -1)
+set_controller ($CCmessage59, $delay_DEPTH)
+   end if
+   end on
+
+on ui_control ($delay_RATE)
+   if ($CCmessage60 # -1)
+set_controller ($CCmessage60, $delay_RATE)
+   end if
+   end on
+
+on ui_control ($delay_BBDTYPE)
+   if ($CCmessage61 # -1)
+set_controller ($CCmessage61, $delay_BBDTYPE)
+   end if
+   end on
+
