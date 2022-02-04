@@ -1,19 +1,19 @@
-# Elektronika EM-25 K6 
 
- EM-25 Instrument for Kontakt 6
+# EM-25 Front End
 
-  **Patches**: 8
--   **Formats:** Kontakt
--   **Approx Size:** 498mb
--   **Info:** [ruskeys.net](http://www.ruskeys.net/eng/base/electr25.php)
-- [Web Audio Demo](https://www.modularsamples.com/Demos/demos/em25.html)
+Two Kontakt 6 instruments that use the [Elektronika EM-25 sample library](https://github.com/publicsamples/Elektronika-EM-25).
 
-## **Get help**
+**EM-25 Front End LE**
 
-[Report an issue](https://github.com/publicsamples/home/issues) - [Ask a question](https://github.com/publicsamples/home/discussions) - [Guides](https://github.com/publicsamples/home/wiki)
+A single "oscillator" synthesizer with drawlbar controls for each of the EM-25 sound groups, multi mode filter, 3 AHRSR envelopes 2 LFOs & delay. NOTHING FANCY :)
 
-## **Support this project**
+![enter image description here](https://github.com/publicsamples/Elektronika-EM-25-K6/blob/master/images/le.jpg?raw=true)
 
-[
-![dx-15-kontakt](https://www.modularsamples.com/img/dx30full.png)
-](https://www.modularsamples.com/dx-15-for-kontakt/)
+
+
+**EM-25 Front End XL**
+
+A dual "oscillator" version with a twist. Each drawbar in oscillator 1 can be tuned and modulated individually, essentially giving us control over 11 oscillators and 12 LFO's.  As you'd expect this is great for massive pads, drones and orchestral effects.  
+
+![EM25 Front End XL](https://github.com/publicsamples/Elektronika-EM-25-K6/blob/master/images/25XL.jpg?raw=true)
+
