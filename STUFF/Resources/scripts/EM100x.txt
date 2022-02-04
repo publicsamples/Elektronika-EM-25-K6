@@ -276,11 +276,11 @@ set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_string_d8 , 2, 5, 0)
 end on
 
 on ui_control ($multisampleA_string_pd8)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_string_pd16 , 2, 5, 1)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_string_pd8 , 2, 5, 1)
 end on
 
 on ui_control ($multisampleA_string_fd8)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_string_fd16 , 2, 5, 2)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_string_fd8 , 2, 5, 2)
 end on
 
 
@@ -299,6 +299,15 @@ end on
 on ui_control ($multisampleA_string_d4)
 set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_string_d4 , 3, 5, 0)
 end on
+
+on ui_control ($multisampleA_string_pd4)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_string_pd4 , 3, 5, 1)
+end on
+
+on ui_control ($multisampleA_string_fd4)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_string_fd4 , 3, 5, 2)
+end on
+
 
 on ui_control ($multisampleA_string_lfounit)
 $count := 0
@@ -359,11 +368,11 @@ set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_d8 , 5, 5, 0)
 end on
 
 on ui_control ($multisampleA_organ_pd8)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_pd16 , 5, 5, 1)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_pd8 , 5, 5, 1)
 end on
 
 on ui_control ($multisampleA_organ_fd8)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_fd16 , 4, 5, 2)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_fd8 , 5, 5, 2)
 end on
 
 
@@ -380,15 +389,15 @@ set_engine_par($ENGINE_PAR_INTMOD_FREQUENCY , $multisampleA_organ_l4 , 6,  5,-1)
 end on
 
 on ui_control ($multisampleA_organ_d4)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_d4 , 6,  6,  0)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_d4 , 6,  5,  0)
 end on
 
 on ui_control ($multisampleA_organ_pd4)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_pd4 , 6,  6,  1)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_pd4 , 6,  5,  1)
 end on
 
 on ui_control ($multisampleA_organ_fd4)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_fd4 , 6,  6,  2)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_organ_fd4 , 6,  5,  2)
 end on
 
 
@@ -425,8 +434,8 @@ end while
 end on
 
 on ui_control ($multisampleA_organ_shape)
-$count := 3
-while ($count < 6 )    
+$count := 4
+while ($count < 7 )    
 set_engine_par($ENGINE_PAR_INTMOD_SUBTYPE , $multisampleA_organ_shape , $count, 5,-1)
 inc ($count)
 end while
@@ -496,28 +505,28 @@ set_engine_par($ENGINE_PAR_INTMOD_FREQUENCY , $multisampleA_brass_l4 , 10,  5,-1
 end on
 
 on ui_control ($multisampleA_brass_d4)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_brass_d4 , 9, 5, 0)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_brass_d4 , 10, 5, 0)
 end on
 
 on ui_control ($multisampleA_brass_pd4)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_brass_pd4 , 9, 5, 1)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_brass_pd4 , 10, 5, 1)
 end on
 
 on ui_control ($multisampleA_brass_fd4)
-set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_brass_fd4 , 9, 5, 2)
+set_engine_par($ENGINE_PAR_INTMOD_INTENSITY , $multisampleA_brass_fd4 , 10, 5, 2)
 end on
 
 on ui_control ($multisampleA_brass_lfounit)
-$count := 7
-while ($count < 10 )    
-set_engine_par($ENGINE_PAR_INTMOD_FREQUENCY_UNIT , $multisampleA_organ_lfounit , $count, 5,-1)
+$count := 8
+while ($count < 11 )    
+set_engine_par($ENGINE_PAR_INTMOD_FREQUENCY_UNIT , $multisampleA_brass_lfounit , $count, 5,-1)
 inc ($count)
 end while
 end on
 
 on ui_control ($multisampleA_brass_shape)
 $count := 7
-while ($count < 10 )    
+while ($count < 11 )    
 set_engine_par($ENGINE_PAR_INTMOD_SUBTYPE , $multisampleA_brass_shape , $count, 5,-1)
 inc ($count)
 end while
