@@ -5,7 +5,7 @@ Two Kontakt 6 instruments that use the [Elektronika EM-25 sample library](https:
 
 **EM-25 Front End LE**
 
-A single "oscillator" synthesizer with drawlbar controls for each of the EM-25 sound groups, multi mode filter, 3 AHRSR envelopes 2 LFOs & delay. NOTHING FANCY :)
+A single "oscillator" synthesizer with drawbar controls for each of the EM-25 sound groups, multi mode filter, 3 AHRSR envelopes 2 LFOs & delay. NOTHING FANCY :)
 
 ![enter image description here](https://github.com/publicsamples/Elektronika-EM-25-K6/blob/master/images/le.jpg?raw=true)
 
