@@ -153,6 +153,18 @@ make_persistent ($multisampleB_brass_brass16)
 make_persistent ($multisampleB_brass_brass8)
 make_persistent ($multisampleB_brass_brass4)
 
+make_persistent ($multisampleB_string_pan16)
+make_persistent ($multisampleB_string_pan8)
+make_persistent ($multisampleB_string_pan4)
+make_persistent ($multisampleB_organ_pan16)
+make_persistent ($multisampleB_organ_pan8)
+make_persistent ($multisampleB_organ_pan4)
+make_persistent ($multisampleB_organ_pan2)
+make_persistent ($multisampleB_brass_pan16)
+make_persistent ($multisampleB_brass_pan8)
+make_persistent ($multisampleB_brass_pan4)
+
+
 end on
 
 
@@ -195,10 +207,51 @@ on ui_control ($multisampleB_brass_brass8)
 set_engine_par($ENGINE_PAR_VOLUME , $multisampleB_brass_brass8 , 8, 0,-1)
 end on
 
-
 on ui_control ($multisampleB_brass_brass4)
 set_engine_par($ENGINE_PAR_VOLUME , $multisampleB_brass_brass4 , 9, 0,-1)
 end on
+
+on ui_control ($multisampleB_string_pan16)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_string_pan16 , 0, 0,-1)
+end on
+
+on ui_control ($multisampleB_string_pan8)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_string_pan8 , 1, 0,-1)
+end on
+
+on ui_control ($multisampleB_string_pan4)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_string_pan4 , 2, 0,-1)
+end on
+
+on ui_control ($multisampleB_organ_pan16)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_organ_pan16 , 3, 0,-1)
+end on
+
+
+on ui_control ($multisampleB_organ_pan8)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_organ_pan8 , 4, 0,-1)
+end on
+
+on ui_control ($multisampleB_organ_pan4)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_organ_pan4 , 5, 0,-1)
+end on
+
+on ui_control ($multisampleB_organ_pan2)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_organ_pan2 , 6, 0,-1)
+end on
+on ui_control ($multisampleB_brass_pan16)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_brass_pan16 , 7, 0,-1)
+end on
+
+on ui_control ($multisampleB_brass_pan8)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_brass_pan8 , 8, 0,-1)
+end on
+
+
+on ui_control ($multisampleB_brass_pan4)
+set_engine_par($ENGINE_PAR_PAN , $multisampleB_brass_pan4 , 9, 0,-1)
+end on
+
 
 
 

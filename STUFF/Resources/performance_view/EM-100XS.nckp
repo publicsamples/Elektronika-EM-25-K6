@@ -8,7 +8,7 @@
         "performanceView": {
             "background": {
                 "color": 15790052,
-                "image": "em25XSPRO"
+                "image": "em25-pan"
             },
             "controls": [
                 {
@@ -378,7 +378,7 @@
                             "infoPaneText": "",
                             "position": {
                                 "x": 480,
-                                "y": 190
+                                "y": 200
                             },
                             "show": true,
                             "size": {
@@ -3158,7 +3158,7 @@
                                         "infoPaneText": "",
                                         "position": {
                                             "x": 10,
-                                            "y": 15
+                                            "y": 2
                                         },
                                         "show": true,
                                         "size": {
@@ -3168,6 +3168,117 @@
                                         "zLayer": 1
                                     },
                                     "controls": [
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan4",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 134,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan8",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 79,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan16",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 20,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
                                         {
                                             "index": 7,
                                             "value": {
@@ -3773,7 +3884,7 @@
                                         "infoPaneText": "",
                                         "position": {
                                             "x": 350,
-                                            "y": 180
+                                            "y": 190
                                         },
                                         "show": true,
                                         "size": {
@@ -4232,7 +4343,7 @@
                                         "infoPaneText": "",
                                         "position": {
                                             "x": 200,
-                                            "y": 15
+                                            "y": 2
                                         },
                                         "show": true,
                                         "size": {
@@ -4254,10 +4365,158 @@
                                                     "name": ""
                                                 },
                                                 "common": {
+                                                    "id": "pan2",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 200,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan4",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 134,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan8",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 79,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan16",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 20,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
                                                     "id": "organ4",
                                                     "infoPaneText": "",
                                                     "position": {
-                                                        "x": 137,
+                                                        "x": 132,
                                                         "y": 0
                                                     },
                                                     "show": true,
@@ -4401,7 +4660,7 @@
                                         "infoPaneText": "",
                                         "position": {
                                             "x": 455,
-                                            "y": 15
+                                            "y": 2
                                         },
                                         "show": true,
                                         "size": {
@@ -4411,6 +4670,117 @@
                                         "zLayer": 1
                                     },
                                     "controls": [
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan4",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 134,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan8",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 79,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "index": 7,
+                                            "value": {
+                                                "automation": {
+                                                    "disableUserAssign": false,
+                                                    "hostAutomation": {
+                                                        "id": 0,
+                                                        "on": false
+                                                    },
+                                                    "name": ""
+                                                },
+                                                "common": {
+                                                    "id": "pan16",
+                                                    "infoPaneText": "",
+                                                    "position": {
+                                                        "x": 20,
+                                                        "y": 110
+                                                    },
+                                                    "show": true,
+                                                    "size": {
+                                                        "height": 0,
+                                                        "width": 0
+                                                    },
+                                                    "zLayer": 1
+                                                },
+                                                "image": "pinkmini",
+                                                "mouse": {
+                                                    "orientation": 0,
+                                                    "scale": 1500
+                                                },
+                                                "value": {
+                                                    "default": 500000,
+                                                    "max": 1000000,
+                                                    "min": 0
+                                                }
+                                            }
+                                        },
                                         {
                                             "index": 7,
                                             "value": {
@@ -5569,7 +5939,7 @@
                 "show": true
             },
             "size": {
-                "height": 400,
+                "height": 410,
                 "width": 635
             }
         }

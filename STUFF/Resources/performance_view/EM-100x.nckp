@@ -3133,43 +3133,6 @@
                     }
                 },
                 {
-                    "index": 7,
-                    "value": {
-                        "automation": {
-                            "disableUserAssign": false,
-                            "hostAutomation": {
-                                "id": 0,
-                                "on": false
-                            },
-                            "name": ""
-                        },
-                        "common": {
-                            "id": "wave1",
-                            "infoPaneText": "",
-                            "position": {
-                                "x": 60,
-                                "y": 10
-                            },
-                            "show": false,
-                            "size": {
-                                "height": 0,
-                                "width": 0
-                            },
-                            "zLayer": 1
-                        },
-                        "image": "DXASel",
-                        "mouse": {
-                            "orientation": 0,
-                            "scale": 1500
-                        },
-                        "value": {
-                            "default": 0,
-                            "max": 185,
-                            "min": 0
-                        }
-                    }
-                },
-                {
                     "index": 0,
                     "value": {
                         "common": {
